@@ -1,0 +1,74 @@
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.madhub.tiktokliveinteractio">
+
+    <!-- 
+        This app is designed as a social media automation tool specifically for TikTok. 
+        It leverages the capabilities of the MadHub platform to enhance user engagement and 
+        streamline content management processes, leading to improved interaction metrics.
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="TikTok Live Interaction Bot - Android Automation Tool"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        
+        <!-- 
+            MainActivity serves as the entry point of the application. 
+            This component facilitates user interaction and configuration setup, 
+            boosting user efficiency in managing TikTok live interactions.
+        -->
+        <activity 
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 
+            AutomationService is responsible for handling ongoing operations in the background. 
+            By enabling 24/7 automated processes, it significantly improves performance and user 
+            engagement on TikTok, ensuring consistent account activity and enhanced visibility.
+        -->
+        <service 
+            android:name=".AutomationService"
+            android:exported="false" />
+
+    </application>
+
+    <!-- 
+        Permissions are declared for network access and storage needs to ensure smooth operation 
+        of the automation features. These permissions enhance the app's capabilities, leading 
+        to improved user experience and operational effectiveness.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+        Facilitates network communications, essential for live interaction management and 
+        content updates, thereby boosting overall app functionality and user engagement.
+    -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+        Enables monitoring of network connections, which is crucial for ensuring reliable 
+        performance and efficiency in user interactions and content delivery.
+    -->
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--
+        Allows the app to save and manage user-generated content and logs locally, 
+        enhancing data management capabilities and performance during automated tasks.
+    -->
+
+</manifest>
+```
+
+### Key Highlights:
+- **MainActivity**: Improves user efficiency in managing interactions.
+- **AutomationService**: Enables 24/7 operations for consistent user engagement.
+- **Permissions**: Essential for network and storage, enhancing app capabilities and operational effectiveness.
